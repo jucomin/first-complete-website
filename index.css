@@ -4,4 +4,9 @@
   height: 32px;
   border-radius: 50%;
   list-style: none;
+  display: inline-block;
+}
+
+.ingredient {
+  list-style: url('icons/check-mark.png');
 }
