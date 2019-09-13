@@ -7,6 +7,45 @@
   display: inline-block;
 }
 
+h2 {
+  color: firebrick;
+}
+
 .ingredient {
   list-style: url('icons/check-mark.png');
+}
+
+.see-more {
+  background-color: deeppink;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+
+h3 {
+  color: deeppink;
+}
+
+.box {
+  display: flex;
+}
+
+article {
+  flex-grow: 1;
+}
+
+.order {
+  background-color: deeppink;
+  color: white;
+  border: none;
+  border-radius: 30px;
+}
+
+.footer {
+  background-color: deeppink;
+  color: white;
+}
+
+a {
+  color: white;
 }
