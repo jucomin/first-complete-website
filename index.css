@@ -5,6 +5,11 @@
   border-radius: 50%;
   list-style: none;
   display: inline-block;
+  text-align: center;
+}
+
+body {
+  margin: 0;
 }
 
 h2 {
@@ -26,7 +31,7 @@ h3 {
   color: deeppink;
 }
 
-.box {
+.options {
   display: flex;
 }
 
