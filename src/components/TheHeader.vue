@@ -4,7 +4,6 @@
       <img src="../assets/logo.png" alt="Cupcakes & cookies" />
     </router-link>
     <ul>
-      <router-link to="/">Home</router-link>
       <li class="nav-icon">
         <router-link to="/">
           <img src="../assets/icons/house.png" alt="home" />
@@ -45,6 +44,15 @@ export default {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
 }
+.nav-icon {
+  background-color: deeppink;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+}
 
 @media (min-width: 768px) and (max-width: 1023px) {
   //tablet
@@ -60,15 +68,6 @@ export default {
       margin: 20px auto;
       padding: 0 20px;
     }
-  }
-  .nav-icon {
-    background-color: deeppink;
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    list-style: none;
-    display: inline-block;
-    text-align: center;
   }
 }
 </style>

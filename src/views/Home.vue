@@ -1,17 +1,34 @@
 <template>
   <div class="home">
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <banner />
+    <div>
+      <category
+        title="Cupcakes"
+        description="Blah balah yolo"
+        examples="['Chocolate cupcake', 'Red velvet cupcake', 'Vanilla cupcake']"
+      />
+      <category
+        title="Muffins"
+        description="Blah balah yolo"
+        examples="['Banana muffin', 'Applesauce muffin','Chocolate chip muffin']"
+      />
+      <category
+        title="Cookies"
+        description="Blah balah yolo"
+        examples="['Oatmeal cookie', 'Peanut butter cookie','Gluten-free cookie']"
+      />
+    </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import Category from '../components/Category'
+import Banner from '../components/Banner'
 export default {
   name: 'home',
   components: {
-    HelloWorld,
+    Category,
+    Banner,
   },
 }
 </script>
