@@ -11,18 +11,18 @@
         </router-link>
       </li>
       <li class="nav-icon">
-        <router-link to="/">
-          <img src="../assets/icons/compass-arrow.png" alt="direct message" />
+        <router-link to="/about">
+          <img src="../assets/icons/compass-arrow.png" alt="about" />
         </router-link>
       </li>
       <li class="nav-icon">
-        <router-link to="/">
-          <img src="../assets/icons/file.png" alt="file" />
+        <router-link to="/prices">
+          <img src="../assets/icons/file.png" alt="prices" />
         </router-link>
       </li>
       <li class="nav-icon">
-        <router-link to="/">
-          <img src="../assets/icons/question-mark.png" alt="questions" />
+        <router-link to="/faq">
+          <img src="../assets/icons/question-mark.png" alt="faq" />
         </router-link>
       </li>
       <li class="nav-icon">
