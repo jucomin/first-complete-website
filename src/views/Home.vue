@@ -5,17 +5,17 @@
       <category
         title="Cupcakes"
         description="Blah balah yolo"
-        examples="['Chocolate cupcake', 'Red velvet cupcake', 'Vanilla cupcake']"
+        v-bind:examples="['Chocolate cupcake', 'Red velvet cupcake', 'Vanilla cupcake']"
       />
       <category
         title="Muffins"
         description="Blah balah yolo"
-        examples="['Banana muffin', 'Applesauce muffin','Chocolate chip muffin']"
+        v-bind:examples="['Banana muffin', 'Applesauce muffin','Chocolate chip muffin']"
       />
       <category
         title="Cookies"
         description="Blah balah yolo"
-        examples="['Oatmeal cookie', 'Peanut butter cookie','Gluten-free cookie']"
+        v-bind:examples="['Oatmeal cookie', 'Peanut butter cookie','Gluten-free cookie']"
       />
     </div>
   </div>
