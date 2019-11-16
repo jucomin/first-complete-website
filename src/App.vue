@@ -8,6 +8,7 @@
     <router-view />
   </div>
 </template>
+
 <script>
 import TheHeader from './components/TheHeader'
 export default {
@@ -16,6 +17,7 @@ export default {
   },
 }
 </script>
+
 <style lang="scss">
 body {
   background: #f6c5d4 url(assets/background.jpg) 0 0 repeat;

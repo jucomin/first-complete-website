@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header class="header">
     <router-link to="/">
       <img src="../assets/logo.png" alt="Cupcakes & cookies" />
     </router-link>
@@ -40,14 +40,36 @@ export default {
 }
 </script>
 
-<style>
-.nav-icon {
-  background-color: deeppink;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  list-style: none;
-  display: inline-block;
-  text-align: center;
+<style lang= "scss" scoped>
+.header {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  //tablet
+  #app {
+    width: 80%;
+    margin: 15px auto;
+    padding: 0 15px;
+  }
+  @media (min-width: 1024px) {
+    //desktop
+    #app {
+      width: 1000px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+  }
+  .nav-icon {
+    background-color: deeppink;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+  }
 }
 </style>
+
