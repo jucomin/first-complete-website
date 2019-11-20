@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <banner />
-    <div>
+    <div class="options">
       <category
         title="Cupcakes"
         description="Blah balah yolo"
@@ -32,3 +32,8 @@ export default {
   },
 }
 </script>
+<style>
+.options {
+  display: flex;
+}
+</style>
