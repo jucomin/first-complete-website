@@ -51,9 +51,11 @@ export default {
 }
 
 .header {
-  display: grid;
-  grid-template-rows: repeat(2, 1fr);
+  display: flex;
+  justify-content: space-between;
+  margin: 32px 0px;
 }
+
 .nav-icon {
   background-position: center center;
   background-repeat: no-repeat;
@@ -69,6 +71,12 @@ li {
   height: 32px;
   display: inline-block;
   list-style: none;
+  margin: 0px 4px;
+}
+
+ul {
+  margin: 20px 0;
+  padding: 0;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
