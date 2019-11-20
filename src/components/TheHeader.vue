@@ -4,30 +4,20 @@
       <img src="../assets/logo.png" alt="Cupcakes & cookies" />
     </router-link>
     <ul>
-      <li class="nav-icon">
-        <router-link to="/">
-          <img src="../assets/icons/house.png" alt="home" />
-        </router-link>
+      <li>
+        <router-link class="nav-icon house" to="/"></router-link>
       </li>
-      <li class="nav-icon">
-        <router-link to="/about">
-          <img src="../assets/icons/compass-arrow.png" alt="about" />
-        </router-link>
+      <li>
+        <router-link class="nav-icon about" to="/about"></router-link>
       </li>
-      <li class="nav-icon">
-        <router-link to="/prices">
-          <img src="../assets/icons/file.png" alt="prices" />
-        </router-link>
+      <li>
+        <router-link class="nav-icon prices" to="/prices"></router-link>
       </li>
-      <li class="nav-icon">
-        <router-link to="/faq">
-          <img src="../assets/icons/question-mark.png" alt="faq" />
-        </router-link>
+      <li>
+        <router-link class="nav-icon faq" to="/faq"></router-link>
       </li>
-      <li class="nav-icon">
-        <router-link to="/">
-          <img src="../assets/icons/person.png" alt="profile" />
-        </router-link>
+      <li>
+        <router-link class="nav-icon profile" to="/"></router-link>
       </li>
     </ul>
   </header>
@@ -40,18 +30,45 @@ export default {
 </script>
 
 <style lang= "scss" scoped>
+.house {
+  background: url(../assets/icons/house.png);
+}
+
+.about {
+  background: url(../assets/icons/compass-arrow.png);
+}
+
+.prices {
+  background: url(../assets/icons/file.png);
+}
+
+.faq {
+  background: url(../assets/icons/question-mark.png);
+}
+
+.profile {
+  background: url(../assets/icons/person.png);
+}
+
 .header {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
 }
 .nav-icon {
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: inline-block;
   background-color: deeppink;
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  list-style: none;
+}
+
+li {
+  width: 32px;
+  height: 32px;
   display: inline-block;
-  text-align: center;
+  list-style: none;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
