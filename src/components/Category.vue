@@ -1,11 +1,12 @@
 <template>
-  <div>
-    <h1>{{title}}</h1>
-    <h2>{{description}}</h2>
-    <ul class="examples">
-      <li v-for="example in examples" v-bind:key="example">{{ example }}</li>
+  <article>
+    <h3>{{title}}</h3>
+    <p>{{description}}</p>
+    <ul>
+      <li class="ingredient" v-for="example in examples" v-bind:key="example">{{ example }}</li>
     </ul>
-  </div>
+    <button class="see-more">Veja mais</button>
+  </article>
 </template>
 
 <script>
@@ -19,7 +20,20 @@ export default {
 </script>
 
 <style>
-h1 {
-  color: red;
+h3 {
+  color: deeppink;
+}
+article {
+  flex: 1;
+}
+.ingredient {
+  list-style: url('../assets/icons/check-mark.png');
+}
+
+.see-more {
+  background-color: deeppink;
+  border: none;
+  border-radius: 10px;
+  color: white;
 }
 </style>
