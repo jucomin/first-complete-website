@@ -21,7 +21,7 @@ export default {
 
 <style>
 h3 {
-  color: deeppink;
+  color: #ee2461;
 }
 article {
   flex: 1;
@@ -31,7 +31,7 @@ article {
 }
 
 .see-more {
-  background-color: deeppink;
+  background-color: #ee2461;
   border: none;
   border-radius: 10px;
   color: white;
