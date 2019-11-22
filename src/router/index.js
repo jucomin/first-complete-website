@@ -4,6 +4,9 @@ import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import FAQ from '../views/FAQ.vue'
 import Prices from '../views/Prices.vue'
+import Cupcakes from '../views/Cupcakes.vue'
+import Muffins from '../views/Muffins.vue'
+import Cookies from '../views/Cookies.vue'
 
 Vue.use(VueRouter)
 
@@ -27,6 +30,21 @@ const routes = [
     path: '/prices',
     name: 'prices',
     component: Prices,
+  },
+  {
+    path: '/cupcakes',
+    name: 'cupcakes',
+    component: Cupcakes,
+  },
+  {
+    path: '/muffins',
+    name: 'muffins',
+    component: Muffins,
+  },
+  {
+    path: '/cookies',
+    name: 'cookies',
+    component: Cookies,
   },
 ]
 
