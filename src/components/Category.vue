@@ -5,7 +5,7 @@
     <ul>
       <li class="ingredient" v-for="example in examples" v-bind:key="example">{{ example }}</li>
     </ul>
-    <router-link to="../views/Cupcakes.vue">
+    <router-link :to="seeMoreUrl">
       <button class="see-more">See more...</button>
     </router-link>
   </article>
@@ -17,6 +17,7 @@ export default {
     title: String,
     description: String,
     examples: Array,
+    seeMoreUrl: String,
   },
 }
 </script>
