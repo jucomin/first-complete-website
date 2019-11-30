@@ -3,7 +3,7 @@
   <main class="search">
     <search-field />
     <section class="search-results">
-      <search-result-item v-for="result in results" 
+      <search-result-item v-for="result in results"
       :key="result.uri" 
       :image="result.image" 
       :title="result.label" 
@@ -48,7 +48,12 @@ import SearchResultItem from '@/components/SearchResultItem'
           }
         ]
       }
+    },
+
+    beforeCreate (){
+        console.log(this,'APP Key' , process.env)
     }
+
   }
 </script>
 
