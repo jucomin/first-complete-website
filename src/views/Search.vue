@@ -3,7 +3,12 @@
   <main class="search">
     <search-field />
     <section class="search-results">
-      <search-result-item v-for="result in results" :key="result.uri" :image="result.image" :title="result.label" :health-labels="result.healthLabels" :servings="result.yeld" />
+      <search-result-item v-for="result in results" 
+      :key="result.uri" 
+      :image="result.image" 
+      :title="result.label" 
+      :health-labels="result.healthLabels" 
+      :servings="result.yeld" />
     </section>
   </main>
 </template>
