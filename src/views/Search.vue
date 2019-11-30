@@ -21,21 +21,21 @@ import SearchResultItem from '@/components/SearchResultItem'
       return {
         results: [
           {
-            image: 'img/logo.png',
+            image: 'logo.png',
             label: 'Chocolate Cupckacke',
             yeld: 2, // servings
             calories: 2,
             healthLabels: ['vegan', 'vegetarian', 'paleo', 'dairy-free', 'gluten-free', 'wheat-free', 'fat-free', 'low-sugar', 'egg-free', 'peanut-free', 'tree-nut-free', 'soy-free', 'fish-free', 'shellfish-free'],
           },
           {
-            image: 'img/logo.png',
+            image: 'logo.png',
             label: 'Chocolate Cupckacke',
             yeld: 2, // servings
             calories: 2,
             healthLabels: ['vegan', 'vegetarian', 'paleo', 'dairy-free', 'gluten-free', 'wheat-free', 'fat-free', 'low-sugar', 'egg-free', 'peanut-free', 'tree-nut-free', 'soy-free', 'fish-free', 'shellfish-free'],
           },
           {
-            image: 'img/logo.png',
+            image: 'logo.png',
             label: 'Chocolate Cupckacke',
             yeld: 2, // servings
             calories: 2,

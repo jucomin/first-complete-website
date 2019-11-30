@@ -7,6 +7,9 @@ import Prices from '../views/Prices.vue'
 import Cupcakes from '../views/Cupcakes.vue'
 import Muffins from '../views/Muffins.vue'
 import Cookies from '../views/Cookies.vue'
+import Search from '../views/Search.vue'
+
+
 
 Vue.use(VueRouter)
 
@@ -45,6 +48,11 @@ const routes = [
     path: '/cookies',
     name: 'cookies',
     component: Cookies,
+  },
+  {
+    path: '/search',
+    name: 'search',
+    component: Search,
   },
 ]
 
