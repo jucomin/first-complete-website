@@ -6,11 +6,11 @@
     />
     <section class="search-results">
       <search-result-item v-for="result in results"
-      :key="result.recipes.uri" 
-      :image="result.recipes.image" 
-      :title="result.recipes.label" 
-      :health-labels="result.recipes.healthLabels" 
-      :servings="result.recipes.yield" />
+      :key="result.recipe.uri" 
+      :image="result.recipe.image" 
+      :title="result.recipe.label" 
+      :health-labels="result.recipe.healthLabels" 
+      :servings="result.recipe.yield" />
     </section>
   </main>
 </template>
@@ -27,22 +27,24 @@ import SearchResultItem from '@/components/SearchResultItem'
     data () {
       return {
         results: [
-          {recipes:
+          {recipe:
           
           {
             image: 'logo.png',
             label: 'Chocolate Cupckacke',
             yield: 2, // servings
             calories: 2,
+            uri: '1',
             healthLabels: ['vegan', 'vegetarian', 'paleo', 'dairy-free', 'gluten-free', 'wheat-free', 'fat-free', 'low-sugar', 'egg-free', 'peanut-free', 'tree-nut-free', 'soy-free', 'fish-free', 'shellfish-free'],
           }
           },
-                    {recipes:
+                    {recipe:
           
           {
             image: 'logo.png',
             label: 'Chocolate Cupckacke',
             yield: 2, // servings
+            uri: '2', 
             calories: 2,
             healthLabels: ['vegan', 'vegetarian', 'paleo', 'dairy-free', 'gluten-free', 'wheat-free', 'fat-free', 'low-sugar', 'egg-free', 'peanut-free', 'tree-nut-free', 'soy-free', 'fish-free', 'shellfish-free'],
           }
@@ -55,16 +57,13 @@ import SearchResultItem from '@/components/SearchResultItem'
 
     methods: {
       getSearchResults (searchText){ 
+        let results
         this.$axios.get('/search', { 
           params: {
             q: searchText
           }
-        })
-      .then(function(response) 
-      {console.log(response.data)
-      if (response.data && reponse.data.length>0) this.results = response.data
-      }) 
-    }
+        }).then(response => (this.results = response.data.hits))
+      }
   } 
 } 
 </script>
